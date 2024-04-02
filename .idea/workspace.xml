@@ -5,24 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3c3ee6ca-e1ac-4077-a0a6-611113663860" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/MainApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/data/models/User1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/data/repositories/AdsItemRepositoryImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/data/repositories/AdsRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/data/repositories/AdsRepositoryImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/data/repositories/User1Repository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/repositoryTest/User1RepositoryTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/data/models/Ads.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/data/models/Ads.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/data/models/AdsItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/data/models/AdsItem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/data/models/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/data/models/Category.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/data/models/Location.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/data/models/Location.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/data/models/User.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/data/repositories/Ads.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/data/repositories/AdsItemRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/data/repositories/AdsItemRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/data/repositories/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/data/repositories/UserRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/data/repositories/User1Repository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/data/repositories/User1Repository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/repositoryTest/User1RepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/repositoryTest/User1RepositoryTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,9 +37,15 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "JUnit.User1RepositoryTest.executor": "Run",
     "JUnit.User1RepositoryTest.saveTwoUser.executor": "Run",
+    "JUnit.User1RepositoryTest.saveTwoUser_deleteAllUser.executor": "Run",
     "JUnit.User1RepositoryTest.saveTwoUser_deleteOneUser.executor": "Run",
+    "JUnit.User1RepositoryTest.saveTwoUser_deleteTwoUser.executor": "Run",
+    "JUnit.User1RepositoryTest.saveTwoUser_deleteUserWithUsernameAndPassword.executor": "Run",
     "JUnit.User1RepositoryTest.saveUser.executor": "Run",
+    "JUnit.User1RepositoryTest.saveUser_findUser.executor": "Run",
+    "JUnit.User1RepositoryTest.saveUser_findUser_deleteUser.executor": "Run",
     "JUnit.UserRepositoryTest.saveUser.executor": "Run",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
@@ -77,8 +68,8 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.User1RepositoryTest.saveTwoUser_deleteTwoUser">
-    <configuration name="User1RepositoryTest.saveTwoUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager">
+    <configuration name="User1RepositoryTest.saveTwoUser_deleteAllUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="classifiedAdsSystem" />
       <extension name="coverage">
         <pattern>
@@ -88,13 +79,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="org.example.repositoryTest" />
       <option name="MAIN_CLASS_NAME" value="org.example.repositoryTest.User1RepositoryTest" />
-      <option name="METHOD_NAME" value="saveTwoUser" />
+      <option name="METHOD_NAME" value="saveTwoUser_deleteAllUser" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="User1RepositoryTest.saveTwoUser_deleteOneUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="User1RepositoryTest.saveTwoUser_deleteUserWithUsernameAndPassword" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="classifiedAdsSystem" />
       <extension name="coverage">
         <pattern>
@@ -104,23 +95,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="org.example.repositoryTest" />
       <option name="MAIN_CLASS_NAME" value="org.example.repositoryTest.User1RepositoryTest" />
-      <option name="METHOD_NAME" value="saveTwoUser_deleteOneUser" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="User1RepositoryTest.saveTwoUser_deleteTwoUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="classifiedAdsSystem" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.repositoryTest.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.example.repositoryTest" />
-      <option name="MAIN_CLASS_NAME" value="org.example.repositoryTest.User1RepositoryTest" />
-      <option name="METHOD_NAME" value="saveTwoUser_deleteTwoUser" />
+      <option name="METHOD_NAME" value="saveTwoUser_deleteUserWithUsernameAndPassword" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -142,26 +117,45 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MainApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+    <configuration name="User1RepositoryTest.saveUser_findUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="classifiedAdsSystem" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="org.example.MainApplication" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.*" />
+          <option name="PATTERN" value="org.example.repositoryTest.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="org.example.repositoryTest" />
+      <option name="MAIN_CLASS_NAME" value="org.example.repositoryTest.User1RepositoryTest" />
+      <option name="METHOD_NAME" value="saveUser_findUser" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="User1RepositoryTest.saveUser_findUser_deleteUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="classifiedAdsSystem" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.repositoryTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.repositoryTest" />
+      <option name="MAIN_CLASS_NAME" value="org.example.repositoryTest.User1RepositoryTest" />
+      <option name="METHOD_NAME" value="saveUser_findUser_deleteUser" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.User1RepositoryTest.saveTwoUser_deleteTwoUser" />
-        <item itemvalue="JUnit.User1RepositoryTest.saveTwoUser_deleteOneUser" />
-        <item itemvalue="JUnit.User1RepositoryTest.saveTwoUser" />
+        <item itemvalue="JUnit.User1RepositoryTest.saveUser_findUser_deleteUser" />
+        <item itemvalue="JUnit.User1RepositoryTest.saveUser_findUser" />
+        <item itemvalue="JUnit.User1RepositoryTest.saveTwoUser_deleteAllUser" />
+        <item itemvalue="JUnit.User1RepositoryTest.saveTwoUser_deleteUserWithUsernameAndPassword" />
         <item itemvalue="JUnit.User1RepositoryTest.saveUser" />
-        <item itemvalue="Spring Boot.MainApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -187,7 +181,9 @@
       <workItem from="1712040947311" duration="201000" />
       <workItem from="1712042614681" duration="1498000" />
       <workItem from="1712047823166" duration="462000" />
-      <workItem from="1712048360505" duration="862000" />
+      <workItem from="1712048360505" duration="1457000" />
+      <workItem from="1712050053721" duration="1111000" />
+      <workItem from="1712051269641" duration="1823000" />
     </task>
     <servers />
   </component>

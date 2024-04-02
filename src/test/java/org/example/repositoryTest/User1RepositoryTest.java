@@ -7,6 +7,8 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.data.mongo.DataMongoTest;
 
+import java.util.Optional;
+
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 @DataMongoTest
@@ -69,8 +71,56 @@ public class User1RepositoryTest {
         user11.setUsername("joy");
         user11.setPassword("precious");
         user1Repository.save(user11);
-        assertEquals(2,user1Repository.count());
+        user1Repository.deleteByUsernameAndPassword("praise","buddy");
+        assertEquals(1,user1Repository.count());
     }
+
+    @Test
+    public void saveTwoUser_deleteAllUser(){
+        User1 user1 = new User1();
+        user1.setUsername("praise");
+        user1.setPassword("buddy");
+        user1Repository.save(user1);
+        User1 user11 = new User1();
+        user11.setUsername("joy");
+        user11.setPassword("precious");
+        user1Repository.save(user11);
+        user1Repository.deleteAll();
+        assertEquals(0,user1Repository.count());
+
+    }
+
+    @Test
+    public void saveUser_findUser(){
+        User1 user1 = new User1();
+        user1.setUsername("praise");
+        user1.setPassword("buddy");
+        user1Repository.save(user1);
+        User1 user11 = new User1();
+        user11.setUsername("joy");
+        user11.setPassword("precious");
+        user1Repository.save(user11);
+        Optional<User1> foundUser = user1Repository.findById("praise");
+        assertEquals("praise",user1.getUsername());
+    }
+
+    @Test
+    public void saveUser_findUser_deleteUser(){
+        User1 user1 = new User1();
+        user1.setUsername("praise");
+        user1.setPassword("buddy");
+        user1Repository.save(user1);
+        User1 user11 = new User1();
+        user11.setUsername("joy");
+        user11.setPassword("precious");
+        user1Repository.save(user11);
+        Optional<User1> foundUser = user1Repository.findById("praise");
+        assertEquals("praise",user1.getUsername());
+        user1Repository.deleteByUsernameAndPassword("praise","buddy");
+        assertEquals(1,user1Repository.count());
+
+    }
+
 
 
 
